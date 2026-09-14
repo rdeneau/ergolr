@@ -13,7 +13,7 @@ ErgolR is a personal fork of [Ergo-L](https://ergol.org/): same core idea — an
 | Source | What it gave |
 | --- | --- |
 | [Ergo-L](https://ergol.org/) | The letter arrangement and the 1dk one-shot dead key that carries the accents. |
-| TailorKey | The thumb clusters: editing keys on the left thumb, Space/Enter and the layer holds on the right. |
+| [TailorKey](https://sites.google.com/view/tailorkey/moergo/go60) | The thumb clusters: editing keys on the left thumb, Space/Enter and the layer holds on the right. |
 | [Glove80 / MoErgo](https://www.moergo.com/) | The previous incarnation of this layout, from which the 1dk, 2dk, Symbol and emoji layers were transcribed. |
 
 ## Where the code lives
@@ -84,6 +84,15 @@ The two thumb-reachable layers behave the same way:
 That is also what the RGB tells you: every layer lights the same static map, and **the `Esc` key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji.
 The `PrtScr` key stays orange and the right-thumb `Space` stays blue on every layer, as a reminder of which key reaches which.
 
+### The backtick
+
+On the Symbol layer the backtick is the plain AZERTY `AltGr+7`, which is a **dead** grave accent, and it behaves exactly as it does on a standard AZERTY ISO keyboard.
+
+- Backtick then `Space` types one literal backtick.
+- Backtick twice types a pair of them.
+
+Nothing in the firmware pre-composes those sequences: the dead key is the intended behaviour, not a limitation to work around.
+
 ### Parallels between the layers
 
 Several keys mean the same thing on every layer they appear on, which is most of what makes the layout memorable.
@@ -127,5 +136,8 @@ The host OS layout stays **French AZERTY**: the keyboard only ever sends raw sca
 
 ## The two sheets
 
-- `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture. Blue marks the key that holds Symbol, orange the key that holds NavNum, matching the RGB under the keys.
+- `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture, plus the two rotary encoders in the middle.
+  Blue marks the key that holds Symbol, orange the key that holds NavNum, matching the RGB under the keys.
+  Letter keys show the uppercase letter and the lowercase accented one: the two glyphs the other levels do not repeat.
 - `ergolr-emoji.svg` — the Emoji layer, reached by tapping the red `★` key twice.
+  Each emoji carries the name it has in `ergol-r_moergo.json`, and the corner of every key repeats the Base glyph it sits on.
