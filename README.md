@@ -1,8 +1,10 @@
 # ErgolR
 
-A French-first ergonomic keyboard layout for a 4×6 split column-staggered board, currently a **Keebart Sofle Choc Pro**.
+A French-first ergonomic keyboard layout for a 4×6 split column-staggered board, currently a [Keebart Sofle Choc Pro](https://www.keebart.com/products/sofle).
 
 ErgolR is a personal fork of [Ergo-L](https://ergol.org/): same core idea — an optimised letter arrangement plus a one-shot dead key (1dk) for everything accented or typographic — reshaped for a 40-ish % split keyboard, and for the habits of an AZERTY touch typist who writes code all day.
+
+## Sofle Choc Pro
 
 ![Base, NavNum, Symbol and 1dk layers](ergolr-layers.svg)
 

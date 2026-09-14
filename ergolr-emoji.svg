@@ -91,7 +91,7 @@
     }
   </style>
 
-  <text x="8" y="22" class="title">ErgolR — Sofle Choc Pro — 🔣 Emoji layer</text>
+  <text x="8" y="22" class="title">🔣 Emoji layer</text>
   <text x="8" y="42" class="legend">reached by tapping the 1dk key <tspan class="deadKey">★</tspan> twice</text>
   <g id="left">
     <g class="col_L specialKey">

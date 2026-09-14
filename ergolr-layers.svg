@@ -95,7 +95,7 @@
     }
   </style>
 
-  <text x="8" y="22" class="title">ErgolR — Sofle Choc Pro — Base / NavNum / Symbol / 1dk ★</text>
+  <text x="8" y="22" class="title">Base / NavNum / Symbol / 1dk ★</text>
   <text x="8" y="42" class="legend">
     <tspan class="letter">Q</tspan> base key 
     • <tspan class="accent">à</tspan> 1dk (tap <tspan class="deadKey">★</tspan>) 
@@ -159,7 +159,7 @@
         <text x="14" y="21" class="letter">A</text>
         <text x="42" y="38" class="accent">à</text>
         <text x="8" y="48" class="sym">&lt;</text>
-        <text x="49" y="49" class="nav">SelA</text>
+        <text x="49" y="49" class="nav" title="Select all">SelAll</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -534,33 +534,37 @@
     <g class="thb_7 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="5" y="17" class="capTL">Backspc</text>
-        <text x="42" y="32" class="accent2">▲</text>
-        <text x="42" y="47" class="accent">⮝</text>
+        <text x="5" y="17" class="capTL">Bksp</text>
+        <text x="42" y="17" class="accent2">▲</text>
+        <text x="42" y="32" class="accent">⮝</text>
+        <text x="49" y="47" class="nav">0</text>
       </g>
     </g>
     <g class="thb_8 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Up</text>
-        <text x="42" y="32" class="accent2">⇑</text>
-        <text x="42" y="47" class="accent">↑</text>
+        <text x="42" y="17" class="accent2">⇑</text>
+        <text x="42" y="32" class="accent">↑</text>
+        <text x="49" y="47" class="nav">0</text>
       </g>
     </g>
     <g class="thb_9 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Down</text>
-        <text x="42" y="32" class="accent2">⇓</text>
-        <text x="42" y="47" class="accent">↓</text>
+        <text x="42" y="17" class="accent2">⇓</text>
+        <text x="42" y="32" class="accent">↓</text>
+        <text x="49" y="47" class="nav">,</text>
       </g>
     </g>
     <g class="thb_0 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Win</text>
-        <text x="42" y="32" class="accent2">▼</text>
-        <text x="42" y="47" class="accent">⮟</text>
+        <text x="42" y="17" class="accent2">▼</text>
+        <text x="42" y="32" class="accent">⮟</text>
+        <text x="49" y="47" class="nav">Enter</text>
       </g>
     </g>
   </g>
