@@ -40,7 +40,7 @@ Twenty years of AZERTY is not worth re-learning away when the gain is marginal.
 - `#` on <kbd>9</kbd> — a character I type constantly, naming C# and F#. Its 1dk gives `♯`, the music sharp sign those two names are actually pronounced with.
 - `°` on <kbd>0</kbd>, taking the slot `/` used to hold: the slash is easier to reach on the Symbol layer, with `\` right underneath it.
 
-### Three new key pairs
+### Three new typo key pairs
 
 - <kbd>, / ;</kbd> replaces <kbd>b</kbd> on the bottom row, mirroring <kbd>. / :</kbd> on the other half.
 - <kbd>- / _</kbd> takes the slot <kbd>, / ;</kbd> left free, between <kbd>g</kbd> and <kbd>k</kbd>.
@@ -49,19 +49,21 @@ Twenty years of AZERTY is not worth re-learning away when the gain is marginal.
 ### A 1dk layer that keeps room for symbols
 
 It carries fewer accented characters than a full French set, which frees space for typography and box-drawing characters.
-The common ones sit on their own vowel: `é` on <kbd>e</kbd>, `î` on <kbd>i</kbd>, `û` on <kbd>u</kbd>, `à` on <kbd>a</kbd>.
-<kbd>a</kbd> is the exception twice over. `â` cannot take the key above it — that one has to stay <kbd>Shift</kbd> — so it moves one row further up, onto <kbd>q</kbd>; and `æ`, evicted from that slot, lands on <kbd>f</kbd>, right after the run of e-s.
-Special characters follow the same likeness rule: the quotes on the quote keys, `’` on the apostrophe, `‰` next to `%`, `§` on <kbd>p</kbd> (as in *paragraph*) with `¶` next to it on <kbd>w</kbd>, `♯` on <kbd>#</kbd>, `÷` on <kbd>d</kbd> (as in *divide*), and a literal Tab character on the <kbd>Tab</kbd> key.
+The common ones sit on their own vowel: `é` on <kbd>e</kbd>, `î` on <kbd>i</kbd>, `û` on <kbd>u</kbd>, `à` on <kbd>a</kbd>, `ç` on <kbd>c</kbd>.
+The other ones are placed on the left or/and on the right of their base key, except for the <kbd>a</kbd>, with a double exception: `â` is placed above its key — to preserve <kbd>Shift</kbd> on the left — and `æ` lands on <kbd>f</kbd>, right after the run of e-s (`è` `é` `ê`).
+
+Special characters follow the same likeness/mnemonic rule: the currency symbol `¤` on <kbd>$ 1</kbd>, the guillemets on the double-quote keys, the apostrophe `’` on the quote key, `‰` next to `%`, `±` `≠` `≈` `≡` around to <kbd>= +</kbd>, `×` on <kbd>* µ</kbd>, `§` on <kbd>p</kbd> (as in *paragraph*) with `¶` next to it on <kbd>w</kbd>, `♯` on <kbd>#</kbd>, `µ` on <kbd>m</kbd>, `÷` on <kbd>d</kbd> (as in *divide*), a literal Tab character on the <kbd>Tab</kbd> key, `x` on <kbd>x</kbd>, `✓` on <kbd>k</kbd> (as in o*K*), `· •` on <kbd>.</kbd>, `…` on its right, `– —` (EN and EM dashes) on <kbd>- _</kbd>.
+That last Tab is a real U+0009 sent through WinCompose, not <kbd>Tab</kbd> under another name: an editor is free to turn the key itself into an indent, a completion or a focus change, and VS Code does.
 
 ## Layers
 
-| #   | Name       | Reached by    | Holds                                                                        |
-| --- | ---------- | ------------- | ---------------------------------------------------------------------------- |
-| 0   | **Base**   | <kbd>Esc</kbd>           | The ErgolR letters, the digit row, the editing thumbs.                       |
-| 1   | **NavNum** | <kbd>PrtScr</kbd>        | F1–F12, navigation, Undo/Cut/Copy/Paste, a numeric keypad on the right half. |
-| 2   | **Symbol** | <kbd>Space</kbd>         | Brackets, operators, punctuation.                                            |
-| 3   | **1dk**    | the <kbd>★</kbd> key     | Accents and typography; Shift reaches the second glyph of each pair.         |
-| 4   | **Emoji**  | tap <kbd>★</kbd> twice   | Emoji, as the Glove80's third dead key; the digit row holds the keycaps.     |
+| #   | Name       | Reached by             | Holds                                                                        |
+| --- | ---------- | ---------------------- | ---------------------------------------------------------------------------- |
+| 0   | **Base**   | <kbd>Esc</kbd>         | The ErgolR letters, the digit row, the editing thumbs.                       |
+| 1   | **NavNum** | <kbd>PrtScr</kbd>      | F1–F12, navigation, Undo/Cut/Copy/Paste, a numeric keypad on the right half. |
+| 2   | **Symbol** | <kbd>Space</kbd>       | Brackets, operators, punctuation.                                            |
+| 3   | **1dk**    | the <kbd>★</kbd> key   | Accents and typography; Shift reaches the second glyph of each pair.         |
+| 4   | **Emoji**  | tap <kbd>★</kbd> twice | Emoji, as the Glove80's third dead key; the digit row holds the keycaps.     |
 
 ### Hold, double tap, and the way out
 
@@ -76,6 +78,34 @@ The two thumb-reachable layers behave the same way:
 <kbd>Esc</kbd> leaves a locked layer and returns to Base.
 That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji.
 The <kbd>PrtScr</kbd> key stays orange and the right-thumb <kbd>Space</kbd> stays blue on every layer, as a reminder of which key reaches which.
+
+### The Symbol layer, and why the operators sit where they do
+
+The Symbol layer follows [Sunaku's symbol layer](https://sunaku.github.io/moergo-glove80-keyboard.html#symbol-layer) for the Glove80: rather than scattering the operators, put the characters that go *together* next to each other, so the digraphs a programmer types all day become one inward roll instead of two hunted keys.
+
+The left home row carries the four characters every arrow is made of, in that order:
+
+| <kbd>a</kbd> | <kbd>s</kbd> | <kbd>e</kbd> | <kbd>n</kbd> |
+| ------------ | ------------ | ------------ | ------------ |
+| `<`          | `=`          | `-`          | `>`          |
+
+From there the arrows write themselves, all on that one row, most of them rolling inward towards the index:
+
+- `->` thin arrow — <kbd>e</kbd> <kbd>n</kbd>
+- `=>` fat arrow, the F# and C# lambda — <kbd>s</kbd> <kbd>n</kbd>
+- `<-` — <kbd>a</kbd> <kbd>e</kbd>
+- `<=` `>=` — the same two keys, either way round
+- `|>` the F# pipe — <kbd>x</kbd> <kbd>n</kbd>, one row down then back up
+
+The row below holds `&` `|` `+` `*` on <kbd>z</kbd> <kbd>x</kbd> <kbd>c</kbd> <kbd>v</kbd>, which is what puts `|` under the arrow row and makes `|>` and `||` cheap.
+
+The brackets nest outwards from the middle of the row above, `(` and `)` on the two index-adjacent keys and `[` `]` around them, with `{` `}` one row higher still:
+
+| <kbd>q</kbd> | <kbd>b</kbd> | <kbd>o</kbd> | <kbd>p</kbd> |
+| ------------ | ------------ | ------------ | ------------ |
+| `[`          | `(`          | `)`          | `]`          |
+
+The right half keeps the punctuation — `.` `/` `:` `\` `!` `?` — plus `~` and `^`.
 
 ### The backtick
 
@@ -126,10 +156,12 @@ Caps Lock is handled explicitly rather than left to the host: the French Windows
 | #   | Board           | What the host needed                                                                                                                                                                                                                            |
 | --- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Sofle           | A Windows keyboard US driver, generated with [Kalamine](https://github.com/OneDeadKey/kalamine) and installed on the machine. The layout lived in the OS. Connect to a remote machine (e.g., with RDP) and you end up with a QWERTY keyboard 🫤. |
-| 2   | Glove80         | No driver, but an [AutoHotkey (AHK) v2](https://www.autohotkey.com/v2/) script for the special characters and the emoji.                                                                                                                        |
+| 2   | Glove80         | No driver, but an [AutoHotkey (AHK) v2](https://www.autohotkey.com/v2/) script for the special characters and the emoji. Reliable most of the time, not all of it: now and then a macro printed its own code point instead of the character.    |
 | 3   | Sofle (current) | Only [WinCompose](https://github.com/samhocevar/wincompose). Everything else lives in the firmware.                                                                                                                                             |
 
 The direction is the same each time: push the layout further down, from the OS into the keyboard, so that plugging the board into any machine is enough.
+
+WinCompose turned out to be the more dependable of the two: the firmware hands it a code point and it types the character, where the AHK script sometimes lost the race and left the code on screen.
 
 The current firmware still needs WinCompose installed, with its compose key on <kbd>Scroll Lock</kbd> — not <kbd>Alt Gr</kbd> (a.k.a. "Right Alt"), although ErgolR does not need to expose this key.
 The host OS layout stays **French AZERTY**: the keyboard only ever sends raw scancodes, and the host turns them into the glyphs above.
