@@ -10,7 +10,7 @@
     .pair    { font-size: 16px; font-weight: bold; }
     .accent  { font-size: 13px; fill: #2a7; }
     .accent2 { font-size: 12px; fill: #6b6; }
-    .sym     { font-size: 10px; fill: #44f; text-anchor: start; }
+    .sym     { font-size: 10px; fill: #7370a9; text-anchor: start; }
     .nav     { font-size: 10px; fill: #e83; text-anchor: end; }
     .cap     { font-size: 12px; }
     .capTL   { font-size: 11px; text-anchor: start; }
@@ -91,8 +91,8 @@
     }
   </style>
 
-  <text x="8" y="22" class="title">ErgolR — Sofle Choc Pro — Emoji layer</text>
-  <text x="8" y="42" class="legend"><tspan class="ghost">Q</tspan> base key  <tspan class="emoji small">🐛</tspan> emoji with its name  — reached by tapping the red 1dk key twice</text>
+  <text x="8" y="22" class="title">ErgolR — Sofle Choc Pro — 🔣 Emoji layer</text>
+  <text x="8" y="42" class="legend">reached by tapping the 1dk key <tspan class="deadKey">★</tspan> twice</text>
   <g id="left">
     <g class="col_L specialKey">
       <g transform="translate(0 -60)">
@@ -116,6 +116,7 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">1</text>
+        <text x="27" y="35" class="emoji">1️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -140,6 +141,7 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">2</text>
+        <text x="27" y="35" class="emoji">2️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -164,12 +166,13 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">3</text>
+        <text x="27" y="35" class="emoji">3️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">O</text>
         <text x="27" y="35" class="emoji">👌</text>
-        <text x="26" y="48" class="ename">Ok hand</text>
+        <text x="26" y="48" class="ename">Ok</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -181,13 +184,14 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">C</text>
         <text x="27" y="35" class="emoji">🚧</text>
-        <text x="26" y="48" class="ename">Constr.</text>
+        <text x="26" y="48" class="ename">Construct°</text>
       </g>
     </g>
     <g class="col_4">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">4</text>
+        <text x="27" y="35" class="emoji">4️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -199,7 +203,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">N</text>
         <text x="27" y="35" class="emoji">ℹ️</text>
-        <text x="26" y="48" class="ename">Info</text>
+        <text x="26" y="48" class="ename">iNfo</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -212,6 +216,7 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">5</text>
+        <text x="27" y="35" class="emoji">5️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -227,7 +232,7 @@
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">,</text>
+        <text x="13" y="15" class="ghost"></text>
         <text x="27" y="35" class="emoji">⚠️</text>
         <text x="26" y="48" class="ename">Warning</text>
       </g>
@@ -235,21 +240,23 @@
     <g class="ext_L specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Space</text>
+        <text x="13" y="15" class="ghost"><!--Space--></text>
       </g>
     </g>
     <g class="thb_5 specialKey">
       <g>
         <rect width="52" height="82" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Enter</text>
-        <text x="27" y="35" class="emoji">🪟</text>
-        <text x="26" y="48" class="ename">Picker</text>
+        <text x="27" y="38" class="emoji">🔣</text>
+        <text x="26" y="55" class="ename">Emoji</text>
+        <text x="26" y="64" class="ename">Picker</text>
       </g>
     </g>
     <g class="thb_4 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Del</text>
+        <text x="27" y="35" class="emoji">▶️</text>
       </g>
     </g>
     <g class="thb_3 specialKey">
@@ -257,7 +264,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Right</text>
         <text x="27" y="35" class="emoji">👉</text>
-        <text x="26" y="48" class="ename">Index R</text>
+        <text x="26" y="48" class="ename">Pointing R</text>
       </g>
     </g>
     <g class="thb_2 specialKey">
@@ -265,13 +272,14 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Left</text>
         <text x="27" y="35" class="emoji">👈</text>
-        <text x="26" y="48" class="ename">Index L</text>
+        <text x="26" y="48" class="ename">Pointing L</text>
       </g>
     </g>
     <g class="thb_1 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Alt</text>
+        <text x="27" y="35" class="emoji">◀️</text>
       </g>
     </g>
   </g>
@@ -280,6 +288,7 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">6</text>
+        <text x="27" y="35" class="emoji">6️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -295,7 +304,6 @@
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">.</text>
         <text x="27" y="35" class="emoji">🤖</text>
         <text x="26" y="48" class="ename">Robot</text>
       </g>
@@ -304,6 +312,7 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">7</text>
+        <text x="27" y="35" class="emoji">7️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -328,12 +337,13 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">8</text>
+        <text x="27" y="35" class="emoji">8️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">D</text>
         <text x="27" y="35" class="emoji">💡</text>
-        <text x="26" y="48" class="ename">Idea</text>
+        <text x="26" y="48" class="ename">iDea</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -352,10 +362,13 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">9</text>
+        <text x="27" y="35" class="emoji">9️⃣</text>
       </g>
-      <g transform="translate(0 0)" id="dk">
+      <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">1dk</text>
+        <text x="13" y="15" class="ghost">★</text>
+        <text x="27" y="35" class="emoji">⭐</text>
+        <text x="26" y="48" class="ename">Star</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -366,12 +379,15 @@
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">-</text>
+        <text x="27" y="35" class="emoji">➖</text>
+        <text x="26" y="48" class="ename">Minus</text>
       </g>
     </g>
     <g class="col_0">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">0</text>
+        <text x="27" y="35" class="emoji">0️⃣</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -396,10 +412,14 @@
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">=</text>
+        <text x="27" y="35" class="emoji">➕</text>
+        <text x="26" y="48" class="ename">Plus</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">*</text>
+        <text x="27" y="35" class="emoji">*️⃣</text>
+        <text x="26" y="48" class="ename">Asterisk</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -407,27 +427,31 @@
         <text x="27" y="35" class="emoji">❗</text>
         <text x="26" y="48" class="ename">Exclam.</text>
       </g>
-      <g transform="translate(0 120)" id="nav">
+      <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">PrtScr</text>
+        <text x="13" y="15" class="ghost"> <!-- PrtScr --> </text>
       </g>
     </g>
     <g class="ext_R specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Enter</text>
+        <text x="13" y="15" class="ghost"> <!-- Enter --> </text>
       </g>
     </g>
-    <g class="thb_6 specialKey" id="sym">
+    <g class="thb_6 specialKey">
       <g>
         <rect width="52" height="82" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Space</text>
+        <text x="27" y="40" class="emoji">🚢</text>
+        <text x="26" y="55" class="ename">Ship</text>
       </g>
     </g>
     <g class="thb_7 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Backspc</text>
+        <text x="13" y="15" class="ghost">Backsp</text>
+        <text x="27" y="35" class="emoji">🧹</text>
+        <text x="26" y="48" class="ename">Broom</text>
       </g>
     </g>
     <g class="thb_8 specialKey">
@@ -450,7 +474,8 @@
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Win</text>
-        <text x="26" y="48" class="ename">Menu</text>
+        <text x="27" y="35" class="emoji">📋</text>
+        <text x="26" y="48" class="ename">Prop</text>
       </g>
     </g>
   </g>
