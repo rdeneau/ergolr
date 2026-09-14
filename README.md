@@ -26,54 +26,56 @@ The letter core is Ergo-L. Everything below is a deliberate departure.
 
 Twenty years of AZERTY is not worth re-learning away when the gain is marginal.
 
-- **`x c v` stay side by side on the bottom row**, in that order, exactly where AZERTY puts them. Cut, copy and paste are chorded hundreds of times a day; moving them costs more than any letter-frequency gain returns.
-- **`c` displaces `b`**, which moves up between `q` and `o`.
-- **`= / +` sits at the end of the digit row**, where AZERTY has it.
-- **`"` on 3 and `'` on 4** follow the AZERTY digit row instead of Ergo-L's `«` and `»`, which move down to the 1dk layer of that same row.
+- **<kbd>x</kbd> <kbd>c</kbd> <kbd>v</kbd> stay side by side on the bottom row**, in that order, exactly where AZERTY puts them. Cut, copy and paste are chorded hundreds of times a day; moving them costs more than any letter-frequency gain returns.
+- **<kbd>c</kbd> displaces <kbd>b</kbd>**, which moves up between <kbd>q</kbd> and <kbd>o</kbd>.
+- **<kbd>= / +</kbd> sits at the end of the digit row**, where AZERTY has it.
+- **<kbd>"</kbd> on <kbd>3</kbd> and <kbd>'</kbd> on <kbd>4</kbd>** follow the AZERTY digit row instead of Ergo-L's `«` and `»`, which move down to the 1dk layer of that same row.
 
 ### A digit row rebuilt around what I actually type
 
-- `$` on **1** rather than 4.
-- `€` on **2** rather than 1.
-- `(` and `)` on **6** and **7**, as a pair, rather than scattered; `&` and `^` are left to the Symbol layer.
-- `@` on **8** rather than 9.
-- `#` on **9** — a character I type constantly, naming C# and F#.
-- `/` on **0**, though it is easier to reach in the Symbol layer, with `\` right underneath it.
+- `$` on <kbd>1</kbd> rather than <kbd>4</kbd>.
+- `€` on <kbd>2</kbd> rather than <kbd>1</kbd>.
+- `(` and `)` on <kbd>6</kbd> and <kbd>7</kbd>, as a pair, rather than scattered; `&` and `^` are left to the Symbol layer.
+- `@` on <kbd>8</kbd> rather than <kbd>9</kbd>.
+- `#` on <kbd>9</kbd> — a character I type constantly, naming C# and F#. Its 1dk gives `♯`, the music sharp sign those two names are actually pronounced with.
+- `°` on <kbd>0</kbd>, taking the slot `/` used to hold: the slash is easier to reach on the Symbol layer, with `\` right underneath it.
 
-### Two new key pairs
+### Three new key pairs
 
-- `, ;` replaces `b` on the bottom row, mirroring `. :` on the other half.
-- `- _` takes the slot `, ;` left free, between `g` and `k`.
+- <kbd>, / ;</kbd> replaces <kbd>b</kbd> on the bottom row, mirroring <kbd>. / :</kbd> on the other half.
+- <kbd>- / _</kbd> takes the slot <kbd>, / ;</kbd> left free, between <kbd>g</kbd> and <kbd>k</kbd>.
+- <kbd>? / !</kbd> ends the right outer column, under <kbd>* / µ</kbd>, where a second <kbd>Backspace</kbd> would only have duplicated the thumb.
 
 ### A 1dk layer that keeps room for symbols
 
 It carries fewer accented characters than a full French set, which frees space for typography and box-drawing characters.
-The common ones sit directly on their vowel (`à é î û`); the rest go left or right of it, wherever there is room — `æ` above `à` being the exception.
-Special characters follow the same likeness rule: the quotes on the quote keys, `’` on the apostrophe, `°` next to `%`, `§` on `p` (as in *paragraph*), and a literal Tab character on the Tab key.
+The common ones sit on their own vowel: `é` on <kbd>e</kbd>, `î` on <kbd>i</kbd>, `û` on <kbd>u</kbd>, `à` on <kbd>a</kbd>.
+<kbd>a</kbd> is the exception twice over. `â` cannot take the key above it — that one has to stay <kbd>Shift</kbd> — so it moves one row further up, onto <kbd>q</kbd>; and `æ`, evicted from that slot, lands on <kbd>f</kbd>, right after the run of e-s.
+Special characters follow the same likeness rule: the quotes on the quote keys, `’` on the apostrophe, `‰` next to `%`, `§` on <kbd>p</kbd> (as in *paragraph*) with `¶` next to it on <kbd>w</kbd>, `♯` on <kbd>#</kbd>, `÷` on <kbd>d</kbd> (as in *divide*), and a literal Tab character on the <kbd>Tab</kbd> key.
 
 ## Layers
 
 | #   | Name       | Reached by    | Holds                                                                        |
 | --- | ---------- | ------------- | ---------------------------------------------------------------------------- |
-| 0   | **Base**   | `Esc`         | The ErgolR letters, the digit row, the editing thumbs.                       |
-| 1   | **NavNum** | `PrtScr`      | F1–F12, navigation, Undo/Cut/Copy/Paste, a numeric keypad on the right half. |
-| 2   | **Symbol** | `Space`       | Brackets, operators, punctuation.                                            |
-| 3   | **1dk**    | the `★` key   | Accents and typography; Shift reaches the second glyph of each pair.         |
-| 4   | **Emoji**  | tap `★` twice | Emoji, as the Glove80's third dead key.                                      |
+| 0   | **Base**   | <kbd>Esc</kbd>           | The ErgolR letters, the digit row, the editing thumbs.                       |
+| 1   | **NavNum** | <kbd>PrtScr</kbd>        | F1–F12, navigation, Undo/Cut/Copy/Paste, a numeric keypad on the right half. |
+| 2   | **Symbol** | <kbd>Space</kbd>         | Brackets, operators, punctuation.                                            |
+| 3   | **1dk**    | the <kbd>★</kbd> key     | Accents and typography; Shift reaches the second glyph of each pair.         |
+| 4   | **Emoji**  | tap <kbd>★</kbd> twice   | Emoji, as the Glove80's third dead key; the digit row holds the keycaps.     |
 
 ### Hold, double tap, and the way out
 
 The two thumb-reachable layers behave the same way:
 
-| Action on `PrtScr` / `Space` | Result                                                 |
-| ---------------------------- | ------------------------------------------------------ |
-| tap                          | `PrtScr` / a space                                     |
-| hold                         | NavNum / Symbol, for as long as the key is held (`MO`) |
-| double tap                   | NavNum / Symbol locked (`TG`)                          |
+| Action on <kbd>PrtScr</kbd> / <kbd>Space</kbd> | Result                                                 |
+| ---------------------------------------------- | ------------------------------------------------------ |
+| tap                                            | <kbd>PrtScr</kbd> / a space                            |
+| hold                                           | NavNum / Symbol, for as long as the key is held (`MO`) |
+| double tap                                     | NavNum / Symbol locked (`TG`)                          |
 
-`Esc` leaves a locked layer and returns to Base.
-That is also what the RGB tells you: every layer lights the same static map, and **the `Esc` key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji.
-The `PrtScr` key stays orange and the right-thumb `Space` stays blue on every layer, as a reminder of which key reaches which.
+<kbd>Esc</kbd> leaves a locked layer and returns to Base.
+That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji.
+The <kbd>PrtScr</kbd> key stays orange and the right-thumb <kbd>Space</kbd> stays blue on every layer, as a reminder of which key reaches which.
 
 ### The backtick
 
@@ -83,6 +85,10 @@ On the Symbol layer the backtick is the plain AZERTY <kbd>AltGr</kbd>+<kbd>7</kb
 - <kbd>\`</kbd>+<kbd>\`</kbd> → double-backtick
 
 Nothing in the firmware pre-composes those sequences: the dead key is the intended behaviour, not a limitation to work around.
+
+`^` and `~` are the opposite call.
+They are dead keys on AZERTY too — <kbd>AltGr</kbd>+<kbd>9</kbd> and <kbd>AltGr</kbd>+<kbd>2</kbd> — but nothing on this layout needs `ê` or `ñ` from them, the 1dk layer already owns the accented letters.
+So the firmware taps the space itself and one tap types one character.
 
 ### Parallels between the layers
 
@@ -104,10 +110,14 @@ Nothing to memorise beyond "the 1dk layer says the same thing in Unicode".
 
 ## Shift, Caps Lock and Auto Shift
 
-Every key carrying two glyphs picks the second one under **Shift or Caps Lock** — the digit row, `, ;`, `. :`, `- _`, and the whole 1dk layer, where Shift turns `à` into `À` and `«` into `❝`.
+Every key carrying two glyphs picks the second one under **<kbd>Shift</kbd> or <kbd>Caps Lock</kbd>** — the digit row, <kbd>, / ;</kbd>, <kbd>. / :</kbd>, <kbd>- / _</kbd>, <kbd>? / !</kbd>, and the whole 1dk layer, where Shift turns `à` into `À` and `«` into `❝`.
 
 **Auto Shift** is on, so *holding* a key is a third way to reach that second glyph — no Shift needed.
 It covers the letters (accented ones included, through the 1dk layer) and the dual-glyph keys of the digit row.
+It stays on under the other modifiers, which is what makes <kbd>Ctrl</kbd>+hold <kbd>p</kbd> reach <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and <kbd>Win</kbd>+hold <kbd>,</kbd> open the Windows emoji picker.
+
+**Double tap <kbd>Shift</kbd>** switches <kbd>Caps Lock</kbd> on; once it is on, a single tap switches it back off.
+A tap here means a press and release with no other key in between, so a <kbd>Shift</kbd> used as a modifier never triggers it.
 
 Caps Lock is handled explicitly rather than left to the host: the French Windows layout inverts the digit row under Caps Lock, and that inversion is undone so the pairs stay literal.
 
@@ -129,5 +139,5 @@ The host OS layout stays **French AZERTY**: the keyboard only ever sends raw sca
 - `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture, plus the two rotary encoders in the middle.
   Blue marks the key that holds Symbol, orange the key that holds NavNum, matching the RGB under the keys.
   Letter keys show the uppercase letter and the lowercase accented one: the two glyphs the other levels do not repeat.
-- `ergolr-emoji.svg` — the Emoji layer, reached by tapping the red `★` key twice.
+- `ergolr-emoji.svg` — the Emoji layer, reached by tapping the red <kbd>★</kbd> key twice.
   Each emoji carries the name it has in the original MoErgo layout, and the corner of every key repeats the Base glyph it sits on.
