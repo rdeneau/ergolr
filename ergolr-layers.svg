@@ -70,8 +70,12 @@
     /* the two layer keys carry the colour of the layer they reach */
     #sym rect { fill: #99f; }
     #sym text.accent { fill: #063; }
+    #sym text.exit { fill: #fff; }
     #nav rect { fill: #e83; }
     #dk  rect { fill: #f99; }
+    #edit rect { fill: #7dd; }
+    #edit text.accent { fill: #063; }
+    #edit text.exit { fill: #fff; }
 
     @media (prefers-color-scheme: dark) {
       rect, path, circle { fill: #444; }
@@ -86,10 +90,14 @@
       .title           { fill: #ccc; }
       .exit            { fill: #999; }
       #dk  rect        { fill: #b44; }
+      #edit rect       { fill: #277; }
+      #edit text.accent { fill: #cff; }
       #nav rect        { fill: #c72; }
       #sym rect        { fill: #77d; }
       #dk  text,
       #nav text,
+      #edit text,
+      #sym text.exit,
       #sym text.capTL  { fill: #fff; }
       #sym text.accent { fill: #cfc; }
     }
@@ -105,18 +113,18 @@
   </text>
   <g class="encoder">
     <text x="418" y="152" class="encTitle">
-      <tspan style="text-anchor: middle; font-size: larger">Cursor</tspan>
-    </text>
-    <circle cx="390" cy="212" r="26"/>
-    <text x="418" y="170" class="encTitle">
+      <tspan style="text-anchor: middle; font-size: larger">Cursor · </tspan>
       <tspan class="nav" style="text-anchor: middle; font-size: larger">Scroll</tspan>
     </text>
+    <text x="418" y="170" class="encTitle">
+      <tspan class="sym" style="text-anchor: middle; font-size: larger">Media</tspan>
+    </text>
     <circle cx="390" cy="212" r="26"/>
-    <text x="375" y="209" class="encText">↶ Up</text>
-    <text x="375" y="221" class="encText">↷ Down</text>
-    <circle cx="446" cy="212" r="26"/>4
-    <text x="431" y="209" class="encText">↶ Left</text>
-    <text x="431" y="221" class="encText">↷ Right</text>
+    <text x="368" y="209" class="encText">Left / Right</text>
+    <text x="375" y="221" class="encText sym">Vol - / +</text>
+    <circle cx="446" cy="212" r="26"/>
+    <text x="424" y="209" class="encText">Up / Down</text>
+    <text x="431" y="221" class="encText sym">⏮️ / ⏭️</text>
   </g>
   <g id="left">
     <g class="col_L specialKey">
@@ -298,14 +306,16 @@
     <g class="ext_L specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="26" y="30" class="cap">Space</text>
+        <text x="26" y="22" class="cap">Space</text>
+        <text x="26" y="38" class="cap">🔇</text>
       </g>
     </g>
-    <g class="thb_5 specialKey">
+    <g class="thb_5 specialKey" id="edit">
       <g>
         <rect width="52" height="82" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Enter</text>
         <text x="25" y="42" class="accent">↩</text>
+        <text x="26" y="70" class="exit">Editor</text>
       </g>
     </g>
     <g class="thb_4 specialKey">
@@ -521,7 +531,8 @@
     <g class="ext_R specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="26" y="30" class="cap">Enter</text>
+        <text x="26" y="22" class="cap">Enter</text>
+        <text x="26" y="38" class="cap">⏯️</text>
       </g>
     </g>
     <g class="thb_6 specialKey" id="sym">
@@ -529,6 +540,7 @@
         <rect width="52" height="82" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Space</text>
         <text x="26" y="47" class="accent word">NBSP</text>
+        <text x="26" y="70" class="exit">Symbol</text>
       </g>
     </g>
     <g class="thb_7 specialKey">

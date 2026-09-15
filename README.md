@@ -2,6 +2,8 @@
 
 ![Base, NavNum, Symbol and 1dk layers](ergolr-layers.svg)
 
+![Editor layer](ergolr-editor.svg)
+
 ![Emoji layer](ergolr-emoji.svg)
 
 ---
@@ -66,20 +68,23 @@ That last Tab is a real U+0009 sent through WinCompose, not <kbd>Tab</kbd> under
 | 2   | **Symbol** | <kbd>Space</kbd>       | Brackets, operators, punctuation.                                            |
 | 3   | **1dk**    | the <kbd>★</kbd> key   | Accents and typography; Shift reaches the second glyph of each pair.         |
 | 4   | **Emoji**  | tap <kbd>★</kbd> twice | Emoji, as the Glove80's third dead key; the digit row holds the keycaps.     |
+| 5   | **Editor** | <kbd>Enter</kbd>       | Cut, copy, paste, format, duplicate; the knobs work the selection.          |
 
 ### Hold, double tap, and the way out
 
-The two thumb-reachable layers behave the same way:
+The three thumb-reachable layers behave the same way:
 
-| Action on <kbd>PrtScr</kbd> / <kbd>Space</kbd> | Result                                                 |
-| ---------------------------------------------- | ------------------------------------------------------ |
-| tap                                            | <kbd>PrtScr</kbd> / a space                            |
-| hold                                           | NavNum / Symbol, for as long as the key is held (`MO`) |
-| double tap                                     | NavNum / Symbol locked (`TG`)                          |
+| Action on <kbd>PrtScr</kbd> / <kbd>Space</kbd> / <kbd>Enter</kbd> | Result                                                          |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| tap                                                               | <kbd>PrtScr</kbd> / a space / a newline                         |
+| hold                                                              | NavNum / Symbol / Editor, for as long as the key is held (`MO`) |
+| double tap                                                        | NavNum / Symbol / Editor locked (`TG`)                          |
+
+<kbd>Space</kbd> is the right thumb key and <kbd>Enter</kbd> the left one, so the two layers a programmer reaches most often sit under one thumb each.
 
 <kbd>Esc</kbd> leaves a locked layer and returns to Base.
-That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji.
-The <kbd>PrtScr</kbd> key stays orange and the right-thumb <kbd>Space</kbd> stays blue on every layer, as a reminder of which key reaches which.
+That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji, cyan on Editor.
+The <kbd>PrtScr</kbd> key stays orange, the right-thumb <kbd>Space</kbd> blue and the left-thumb <kbd>Enter</kbd> cyan on every layer, as a reminder of which key reaches which.
 
 ### The Symbol layer, and why the operators sit where they do
 
@@ -121,6 +126,48 @@ Nothing in the firmware pre-composes those sequences: the dead key is the intend
 `^` and `~` are the opposite call.
 They are dead keys on AZERTY too — <kbd>AltGr</kbd>+<kbd>9</kbd> and <kbd>AltGr</kbd>+<kbd>2</kbd> — but nothing on this layout needs `ê` or `ñ` from them, the 1dk layer already owns the accented letters.
 So the firmware taps the space itself and one tap types one character.
+
+### The Editor layer
+
+The Editor layer carries the shortcuts a keyboard cannot reach in one stroke.
+It is the Glove80's Cursor layer minus its navigation: NavNum already holds the arrows, Home, End and the page keys, and a second copy would only be a second thing to remember.
+
+Cut, copy and paste sit in the right index column, in that order top to bottom — on <kbd>j</kbd>, <kbd>l</kbd> and <kbd>.</kbd> — so the three chords typed hundreds of times a day become one slide of the same finger.
+<kbd>h</kbd> pastes as plain text, the same key as on NavNum.
+<kbd>d</kbd> duplicates the current line or selection, and <kbd>f</kbd> formats the document.
+
+| Key                | Sends                                                   | Does                              |
+| ------------------ | ------------------------------------------------------- | --------------------------------- |
+| <kbd>j</kbd>       | <kbd>Ctrl</kbd>+<kbd>X</kbd>                            | Cut                               |
+| <kbd>l</kbd>       | <kbd>Ctrl</kbd>+<kbd>C</kbd>                            | Copy                              |
+| <kbd>.</kbd>       | <kbd>Ctrl</kbd>+<kbd>V</kbd>                            | Paste                             |
+| <kbd>h</kbd>       | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> | Paste as plain text            |
+| <kbd>d</kbd>       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                            | Duplicate the line or selection   |
+| <kbd>f</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> | Format the document            |
+
+The two knobs work the selection, and each one pushes into the key drawn right under it:
+
+| Knob  | Turn left                                      | Turn right                                   | Push                                                          |
+| ----- | ---------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------- |
+| left  | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd> — shrink | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>→</kbd> — extend | <kbd>Ctrl</kbd>+<kbd>A</kbd> — select all                          |
+| right | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F3</kbd> — one occurrence less | <kbd>Alt</kbd>+<kbd>F3</kbd> — one occurrence more | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F3</kbd> — select all occurrences |
+
+Those three F3 chords are **personal bindings**, not editor defaults:
+
+- Rider — *Unselect Occurrence* / *Add Selection for Next Occurrence* / *Select All Occurrences*
+- VS Code — *Undo Last Cursor* / *Add Selection To Next Find Match* / *Change All Occurrences*
+
+### The knobs
+
+Both encoders sit in the gap between the halves, each one directly above the key that is its own push switch — <kbd>Space</kbd> on the left, <kbd>Enter</kbd> on the right.
+The left knob always moves horizontally and the right one vertically, matching the thumbs: <kbd>←</kbd> <kbd>→</kbd> are on the left thumb, <kbd>↑</kbd> <kbd>↓</kbd> on the right one.
+
+| Layer  | Left knob      | Right knob         | Left push    | Right push          |
+| ------ | -------------- | ------------------ | ------------ | ------------------- |
+| Base   | caret left / right | caret up / down | a space      | a newline           |
+| NavNum | scroll left / right | scroll up / down | —        | —                   |
+| Symbol | volume down / up | previous / next track | mute      | play / pause        |
+| Editor | shrink / extend the selection | one occurrence less / more | select all | select all occurrences |
 
 ### Parallels between the layers
 
@@ -168,10 +215,12 @@ WinCompose turned out to be the more dependable of the two: the firmware hands i
 The current firmware still needs WinCompose installed, with its compose key on <kbd>Scroll Lock</kbd> — not <kbd>Alt Gr</kbd> (a.k.a. "Right Alt"), although ErgolR does not need to expose this key.
 The host OS layout stays **French AZERTY**: the keyboard only ever sends raw scancodes, and the host turns them into the glyphs above.
 
-## The two sheets
+## The three sheets
 
 - `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture, plus the two rotary encoders in the middle.
-  Blue marks the key that holds Symbol, orange the key that holds NavNum, matching the RGB under the keys.
+  Blue marks the key that holds Symbol, orange the key that holds NavNum, cyan the key that holds Editor, matching the RGB under the keys.
   Letter keys show the uppercase letter and the lowercase accented one: the two glyphs the other levels do not repeat.
 - `ergolr-emoji.svg` — the Emoji layer, reached by tapping the red <kbd>★</kbd> key twice.
   Each emoji carries the name it has in the original MoErgo layout, and the corner of every key repeats the Base glyph it sits on.
+- `ergolr-editor.svg` — the Editor layer, reached by holding the left thumb <kbd>Enter</kbd>.
+  Each key names what it does and, underneath, the shortcut it actually sends; the corner repeats the Base glyph, as on the emoji sheet.
