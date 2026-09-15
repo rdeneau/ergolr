@@ -64,11 +64,11 @@ That last Tab is a real U+0009 sent through WinCompose, not <kbd>Tab</kbd> under
 | #   | Name       | Reached by             | Holds                                                                        |
 | --- | ---------- | ---------------------- | ---------------------------------------------------------------------------- |
 | 0   | **Base**   | <kbd>Esc</kbd>         | The ErgolR letters, the digit row, the editing thumbs.                       |
-| 1   | **NavNum** | <kbd>PrtScr</kbd>      | F1–F12, navigation, Undo/Cut/Copy/Paste, a numeric keypad on the right half. |
+| 1   | **NavNum** | <kbd>PrtScr</kbd>      | F1–F12, navigation, a numeric keypad on the right half.                     |
 | 2   | **Symbol** | <kbd>Space</kbd>       | Brackets, operators, punctuation.                                            |
 | 3   | **1dk**    | the <kbd>★</kbd> key   | Accents and typography; Shift reaches the second glyph of each pair.         |
 | 4   | **Emoji**  | tap <kbd>★</kbd> twice | Emoji, as the Glove80's third dead key; the digit row holds the keycaps.     |
-| 5   | **Editor** | <kbd>Enter</kbd>       | Cut, copy, paste, format, duplicate; the knobs work the selection.          |
+| 5   | **Editor** | <kbd>Enter</kbd>       | Undo, redo, the clipboard, format, duplicate; the knobs work the selection. |
 
 ### Hold, double tap, and the way out
 
@@ -132,18 +132,24 @@ So the firmware taps the space itself and one tap types one character.
 The Editor layer carries the shortcuts a keyboard cannot reach in one stroke.
 It is the Glove80's Cursor layer minus its navigation: NavNum already holds the arrows, Home, End and the page keys, and a second copy would only be a second thing to remember.
 
-Cut, copy and paste sit in the right index column, in that order top to bottom — on <kbd>j</kbd>, <kbd>l</kbd> and <kbd>.</kbd> — so the three chords typed hundreds of times a day become one slide of the same finger.
-<kbd>h</kbd> pastes as plain text, the same key as on NavNum.
-<kbd>d</kbd> duplicates the current line or selection, and <kbd>f</kbd> formats the document.
+Select all, cut, copy and paste sit on the left home row, on <kbd>a</kbd> <kbd>s</kbd> <kbd>e</kbd> <kbd>n</kbd>, in that order under the four fingers — so the chords typed hundreds of times a day become one roll instead of a stretch.
+Undo and redo sit on the keys that name them, <kbd>z</kbd> and <kbd>q</kbd>, and <kbd>v</kbd> pastes as plain text, one row below paste.
+The rest of the layer is what an editor adds on top: <kbd>o</kbd> opens, <kbd>p</kbd> prints, <kbd>f</kbd> formats the document, <kbd>d</kbd> duplicates the line or selection, and <kbd>j</kbd> joins lines.
 
-| Key                | Sends                                                   | Does                              |
-| ------------------ | ------------------------------------------------------- | --------------------------------- |
-| <kbd>j</kbd>       | <kbd>Ctrl</kbd>+<kbd>X</kbd>                            | Cut                               |
-| <kbd>l</kbd>       | <kbd>Ctrl</kbd>+<kbd>C</kbd>                            | Copy                              |
-| <kbd>.</kbd>       | <kbd>Ctrl</kbd>+<kbd>V</kbd>                            | Paste                             |
-| <kbd>h</kbd>       | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> | Paste as plain text            |
-| <kbd>d</kbd>       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                            | Duplicate the line or selection   |
-| <kbd>f</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> | Format the document            |
+| Key                | Sends                                                      | Does                            |
+| ------------------ | ---------------------------------------------------------- | ------------------------------- |
+| <kbd>a</kbd>       | <kbd>Ctrl</kbd>+<kbd>A</kbd>                               | Select all                      |
+| <kbd>s</kbd>       | <kbd>Ctrl</kbd>+<kbd>X</kbd>                               | Cut                             |
+| <kbd>e</kbd>       | <kbd>Ctrl</kbd>+<kbd>C</kbd>                               | Copy                            |
+| <kbd>n</kbd>       | <kbd>Ctrl</kbd>+<kbd>V</kbd>                               | Paste                           |
+| <kbd>v</kbd>       | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> | Paste as plain text             |
+| <kbd>z</kbd>       | <kbd>Ctrl</kbd>+<kbd>Z</kbd>                               | Undo                            |
+| <kbd>q</kbd>       | <kbd>Ctrl</kbd>+<kbd>Y</kbd>                               | Redo                            |
+| <kbd>o</kbd>       | <kbd>Ctrl</kbd>+<kbd>O</kbd>                               | Open                            |
+| <kbd>p</kbd>       | <kbd>Ctrl</kbd>+<kbd>P</kbd>                               | Print                           |
+| <kbd>f</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> | Format the document             |
+| <kbd>d</kbd>       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                               | Duplicate the line or selection |
+| <kbd>j</kbd>       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>              | Join lines                      |
 
 The two knobs work the selection, and each one pushes into the key drawn right under it:
 

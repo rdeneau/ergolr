@@ -160,14 +160,12 @@
         <text x="14" y="21" class="letter">Q</text>
         <text x="42" y="38" class="accent">â</text>
         <text x="8" y="48" class="sym">[</text>
-        <text x="49" y="49" class="nav">Redo</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="14" y="21" class="letter">A</text>
         <text x="42" y="38" class="accent">à</text>
         <text x="8" y="48" class="sym">&lt;</text>
-        <text x="49" y="49" class="nav" title="Select all">SelAll</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -175,7 +173,6 @@
         <text x="42" y="18" class="accent2">◁</text>
         <text x="42" y="38" class="accent">‹</text>
         <text x="8" y="48" class="sym">&amp;</text>
-        <text x="49" y="49" class="nav">Undo</text>
       </g>
     </g>
     <g class="col_2">
@@ -208,7 +205,6 @@
         <text x="42" y="18" class="accent2">✖</text>
         <text x="42" y="38" class="accent">✗</text>
         <text x="8" y="48" class="sym">|</text>
-        <text x="49" y="49" class="nav">Cut</text>
       </g>
     </g>
     <g class="col_3">
@@ -240,7 +236,6 @@
         <text x="14" y="21" class="letter">C</text>
         <text x="42" y="38" class="accent">ç</text>
         <text x="8" y="48" class="sym">+</text>
-        <text x="49" y="49" class="nav">Copy</text>
       </g>
     </g>
     <g class="col_4">
@@ -271,7 +266,6 @@
         <text x="42" y="18" class="accent2">▷</text>
         <text x="42" y="38" class="accent">›</text>
         <text x="8" y="48" class="sym">*</text>
-        <text x="49" y="49" class="nav">Paste</text>
       </g>
     </g>
     <g class="col_5">
@@ -300,7 +294,6 @@
         <text x="15" y="21" class="pair">;</text>
         <text x="15" y="41" class="pair">,</text>
         <text x="8" y="48" class="sym">;</text>
-        <text x="49" y="49" class="nav" title="Paste as text">PstTxt</text>
       </g>
     </g>
     <g class="ext_L specialKey">
