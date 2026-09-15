@@ -221,6 +221,19 @@ WinCompose turned out to be the more dependable of the two: the firmware hands i
 The current firmware still needs WinCompose installed, with its compose key on <kbd>Scroll Lock</kbd> — not <kbd>Alt Gr</kbd> (a.k.a. "Right Alt"), although ErgolR does not need to expose this key.
 The host OS layout stays **French AZERTY**: the keyboard only ever sends raw scancodes, and the host turns them into the glyphs above.
 
+## After flashing
+
+Flashing wipes the EEPROM, and the EEPROM is where everything Vial owns lives — the QMK settings and the combos are not in the keymap source, so they come back empty every time.
+Flash **both halves**, then go through this list before using the board again.
+
+1. Open [vial.rocks](https://vial.rocks/) and connect the keyboard.
+2. Set the keyboard layout back to **French AZERTY**, otherwise every key is labelled with the wrong glyph.
+3. Set the **Auto Shift** timeout back to **200 ms** in the QMK settings tab.
+4. Redefine the **combos that give F1–F12**.
+5. Save the layout as the next `archive/ergolrl-vNN.vil`.
+6. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
+7. Re-import that `.vil` into Vial, so the board ends up carrying the file the archive holds, combos included.
+
 ## The three sheets
 
 - `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture, plus the two rotary encoders in the middle.
