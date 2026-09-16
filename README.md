@@ -240,13 +240,18 @@ Flashing wipes the EEPROM, and the EEPROM is where everything Vial owns lives �
 Flash **both halves**, then go through this list before using the board again.
 
 1. Open [vial.rocks](https://vial.rocks/) and connect the keyboard.
-2. Set the keyboard layout back to **French AZERTY**, otherwise every key is labelled with the wrong glyph.
-3. In the QMK settings tab, set the **Auto Shift** timeout back to **200 ms**, the **Flow Tap** term to **150 ms** and the **Quick Tap** term to **0**.
-   The last two are what keep <kbd>Space</kbd> honest: Flow Tap makes a layer tap pressed right after another key resolve as a tap at once, so a space rolled in mid-word stays a space; Quick Tap at 0 lets the hold reach Symbol even straight after a space, at the cost of the space's auto-repeat.
-4. Redefine the **combos that give F1–F12**.
-5. Save the layout as the next `archive/ergolrl-vNN.vil`.
-6. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
-7. Re-import that `.vil` into Vial, so the board ends up carrying the file the archive holds, combos included.
+2. *Keyboard layout* menu — set it back to **French AZERTY**, otherwise every key is labelled with the wrong glyph.
+3. *QMK Settings* tab → *Auto Shift* — set the **timeout** back to **200 ms**.
+4. *QMK Settings* tab → *Tap-Hold* — set **Flow Tap** to **150** and **Quick Tap Term** to **0**, leaving *Tapping Term* at 200 and *Permissive Hold* and *Hold On Other Key Press* unchecked.
+   These are what keep <kbd>Space</kbd> honest.
+   Flow Tap makes a layer tap pressed within 150 ms of another key resolve as a tap at once, so a space rolled in mid-word stays a space.
+   Quick Tap at 0 lets the hold reach Symbol even straight after a space, at the cost of the space's auto-repeat.
+   *Hold On Other Key Press* would do the opposite of Flow Tap — it turns <kbd>Space</kbd> into a hold as soon as a letter follows, which is the stray symbol to avoid.
+   Each sub-tab keeps its own **Save** button, and its title carries a `*` until you press it.
+5. *Combos* tab — redefine the **combos that give F1–F12**.
+6. *File* menu → *Save current layout* — save it as the next `archive/ergolrl-vNN.vil`.
+7. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
+8. Re-import that `.vil` (*File* → *Load saved layout*) into Vial, so the board ends up carrying the file the archive holds, combos included.
 
 ## The three sheets
 
