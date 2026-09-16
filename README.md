@@ -98,6 +98,7 @@ There the lock is what makes the layer worth having, and the delay on <kbd>PrtSc
 <kbd>Esc</kbd> leaves a locked layer and returns to Base.
 That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji, cyan on Editor.
 The <kbd>PrtScr</kbd> key stays orange, the right-thumb <kbd>Space</kbd> blue and the left-thumb <kbd>Enter</kbd> cyan on every layer, as a reminder of which key reaches which.
+The whole map goes dark after a minute without input and comes back on the first key press: the board is lit by USB power, and a PC under Modern Standby never suspends the bus, so the keyboard would otherwise glow all night next to a sleeping machine.
 
 ### The Symbol layer, and why the operators sit where they do
 
