@@ -145,21 +145,22 @@ So the firmware taps the space itself and one tap types one character.
 The Editor layer carries the shortcuts a keyboard cannot reach in one stroke.
 It is the Glove80's Cursor layer minus its navigation: NavNum already holds the arrows, Home, End and the page keys, and a second copy would only be a second thing to remember.
 
-Select all, cut, copy and paste sit on the left home row, on <kbd>a</kbd> <kbd>s</kbd> <kbd>e</kbd> <kbd>n</kbd>, in that order under the four fingers — so the chords typed hundreds of times a day become one roll instead of a stretch.
-Undo and redo sit on the keys that name them, <kbd>z</kbd> and <kbd>q</kbd>, and <kbd>v</kbd> pastes as plain text, one row below paste.
-The rest of the layer is what an editor adds on top: <kbd>o</kbd> opens, <kbd>p</kbd> prints, <kbd>f</kbd> formats the document, <kbd>d</kbd> duplicates the line or selection, and <kbd>j</kbd> joins lines.
+Cut, copy and paste sit on the left home row, on <kbd>s</kbd> <kbd>e</kbd> <kbd>n</kbd>, in that order under three fingers — so the chords typed hundreds of times a day become one roll instead of a stretch — and <kbd>v</kbd> pastes as plain text, one row below paste.
+Undo and redo went to the right hand, on <kbd>l</kbd> and <kbd>r</kbd>: the layer is held by the *left* thumb, so the left hand is the busy one, and left reads as back, right as forward.
+Comment and uncomment sit on <kbd>c</kbd> and <kbd>x</kbd>, sharing their <kbd>Ctrl</kbd>+<kbd>K</kbd> prefix with format on <kbd>f</kbd>.
+The rest of the layer is what an editor adds on top: <kbd>f</kbd> formats the document, <kbd>d</kbd> duplicates the line or selection, and <kbd>j</kbd> joins lines.
+Select all, open and print left the layer: <kbd>Ctrl</kbd>+<kbd>A</kbd>, <kbd>Ctrl</kbd>+<kbd>O</kbd> and <kbd>Ctrl</kbd>+<kbd>P</kbd> are one stroke either way, and select all is still under the left knob push.
 
 | Key                | Sends                                                      | Does                            |
 | ------------------ | ---------------------------------------------------------- | ------------------------------- |
-| <kbd>a</kbd>       | <kbd>Ctrl</kbd>+<kbd>A</kbd>                               | Select all                      |
 | <kbd>s</kbd>       | <kbd>Ctrl</kbd>+<kbd>X</kbd>                               | Cut                             |
 | <kbd>e</kbd>       | <kbd>Ctrl</kbd>+<kbd>C</kbd>                               | Copy                            |
 | <kbd>n</kbd>       | <kbd>Ctrl</kbd>+<kbd>V</kbd>                               | Paste                           |
 | <kbd>v</kbd>       | <kbd>Win</kbd>+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> | Paste as plain text             |
-| <kbd>z</kbd>       | <kbd>Ctrl</kbd>+<kbd>Z</kbd>                               | Undo                            |
-| <kbd>q</kbd>       | <kbd>Ctrl</kbd>+<kbd>Y</kbd>                               | Redo                            |
-| <kbd>o</kbd>       | <kbd>Ctrl</kbd>+<kbd>O</kbd>                               | Open                            |
-| <kbd>p</kbd>       | <kbd>Ctrl</kbd>+<kbd>P</kbd>                               | Print                           |
+| <kbd>l</kbd>       | <kbd>Ctrl</kbd>+<kbd>Z</kbd>                               | Undo                            |
+| <kbd>r</kbd>       | <kbd>Ctrl</kbd>+<kbd>Y</kbd>                               | Redo                            |
+| <kbd>c</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>C</kbd> | Comment the selection           |
+| <kbd>x</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>U</kbd> | Uncomment the selection         |
 | <kbd>f</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> | Format the document             |
 | <kbd>d</kbd>       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                               | Duplicate the line or selection |
 | <kbd>j</kbd>       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>              | Join lines                      |

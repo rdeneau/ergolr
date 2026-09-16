@@ -135,20 +135,14 @@
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Q</text>
-        <text x="26" y="33" class="act">Redo</text>
-        <text x="26" y="45" class="chord">Ctrl+Y</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">A</text>
-        <text x="26" y="33" class="act">Sel. all</text>
-        <text x="26" y="45" class="chord">Ctrl+A</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">Z</text>
-        <text x="26" y="33" class="act">Undo</text>
-        <text x="26" y="45" class="chord">Ctrl+Z</text>
       </g>
     </g>
     <g class="col_2">
@@ -169,6 +163,8 @@
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">X</text>
+        <text x="26" y="33" class="act">Uncom.</text>
+        <text x="26" y="45" class="chord">Ctrl+K U</text>
       </g>
     </g>
     <g class="col_3">
@@ -179,8 +175,6 @@
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">O</text>
-        <text x="26" y="33" class="act">Open</text>
-        <text x="26" y="45" class="chord">Ctrl+O</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -191,6 +185,8 @@
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">C</text>
+        <text x="26" y="33" class="act">Comment</text>
+        <text x="26" y="45" class="chord">Ctrl+K C</text>
       </g>
     </g>
     <g class="col_4">
@@ -201,8 +197,6 @@
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">P</text>
-        <text x="26" y="33" class="act">Print</text>
-        <text x="26" y="45" class="chord">Ctrl+P</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -290,6 +284,8 @@
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">L</text>
+        <text x="26" y="33" class="act">Undo</text>
+        <text x="26" y="45" class="chord">Ctrl+Z</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
@@ -308,6 +304,8 @@
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="13" y="15" class="ghost">R</text>
+        <text x="26" y="33" class="act">Redo</text>
+        <text x="26" y="45" class="chord">Ctrl+Y</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
