@@ -108,7 +108,7 @@
     <tspan class="letter">Q</tspan> base key 
     • <tspan class="accent">à</tspan> 1dk (tap <tspan class="deadKey">★</tspan>) 
     • <tspan class="accent2">À</tspan> Shifted
-    • <tspan class="sym">|</tspan> Symbol (hold/double-tap <tspan class="sym">Space</tspan>)
+    • <tspan class="sym">|</tspan> Symbol (hold <tspan class="sym">Space</tspan>)
     • <tspan class="nav">F1</tspan> NavNum (hold/double-tap <tspan class="nav">PrtScr</tspan>)
   </text>
   <g class="encoder">

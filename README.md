@@ -72,15 +72,28 @@ That last Tab is a real U+0009 sent through WinCompose, not <kbd>Tab</kbd> under
 
 ### Hold, double tap, and the way out
 
-The three thumb-reachable layers behave the same way:
+The three thumb-reachable layers are all reached by holding one key:
 
 | Action on <kbd>PrtScr</kbd> / <kbd>Space</kbd> / <kbd>Enter</kbd> | Result                                                          |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
 | tap                                                               | <kbd>PrtScr</kbd> / a space / a newline                         |
 | hold                                                              | NavNum / Symbol / Editor, for as long as the key is held (`MO`) |
-| double tap                                                        | NavNum / Symbol / Editor locked (`TG`)                          |
+| double tap                                                        | NavNum / Editor locked (`TG`) — **not Symbol**                  |
 
 <kbd>Space</kbd> is the right thumb key and <kbd>Enter</kbd> the left one, so the two layers a programmer reaches most often sit under one thumb each.
+
+#### Why Symbol has no lock
+
+A double tap can only be told apart from a single one by waiting: the tap has to be held back until the window closes, or a double tap would emit a space before locking the layer.
+That wait is a delay on **every** tap of the key, and it is the reason Symbol does not get one.
+
+Symbol is the only layer reached in the middle of a typing flow — the symbols it holds are typed between words, and its key is the space bar.
+A space that arrives a fifth of a second late, or after the letter that followed it, is unusable, so the key is a plain layer tap: the space leaves on release and nothing is ever held back.
+
+NavNum and Editor are the opposite.
+They are used *outside* a flow — a run of digits typed as a block, a series of editor shortcuts — never one keystroke slipped between two words.
+The digit row already covers the isolated digit.
+There the lock is what makes the layer worth having, and the delay on <kbd>PrtScr</kbd> and <kbd>Enter</kbd> is a price paid where nothing is flowing.
 
 <kbd>Esc</kbd> leaves a locked layer and returns to Base.
 That is also what the RGB tells you: every layer lights the same static map, and **the <kbd>Esc</kbd> key alone says which layer is active** — white on Base, orange on NavNum, blue on Symbol, red on 1dk, violet on Emoji, cyan on Editor.
@@ -228,7 +241,8 @@ Flash **both halves**, then go through this list before using the board again.
 
 1. Open [vial.rocks](https://vial.rocks/) and connect the keyboard.
 2. Set the keyboard layout back to **French AZERTY**, otherwise every key is labelled with the wrong glyph.
-3. Set the **Auto Shift** timeout back to **200 ms** in the QMK settings tab.
+3. In the QMK settings tab, set the **Auto Shift** timeout back to **200 ms**, the **Flow Tap** term to **150 ms** and the **Quick Tap** term to **0**.
+   The last two are what keep <kbd>Space</kbd> honest: Flow Tap makes a layer tap pressed right after another key resolve as a tap at once, so a space rolled in mid-word stays a space; Quick Tap at 0 lets the hold reach Symbol even straight after a space, at the cost of the space's auto-repeat.
 4. Redefine the **combos that give F1–F12**.
 5. Save the layout as the next `archive/ergolrl-vNN.vil`.
 6. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
