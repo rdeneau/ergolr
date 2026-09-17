@@ -100,6 +100,24 @@ That is also what the RGB tells you: every layer lights the same static map, and
 The <kbd>PrtScr</kbd> key stays orange, the right-thumb <kbd>Space</kbd> blue and the left-thumb <kbd>Enter</kbd> cyan on every layer, as a reminder of which key reaches which.
 The whole map goes dark after a minute without input and comes back on the first key press: the board is lit by USB power, and a PC under Modern Standby never suspends the bus, so the keyboard would otherwise glow all night next to a sleeping machine.
 
+### Navigation under the thumbs
+
+The four arrow keys sit on the thumbs — <kbd>Left</kbd> and <kbd>Right</kbd> on the left half, <kbd>Up</kbd> and <kbd>Down</kbd> on the right one — and each one holds the jump that matches its step.
+
+| Tap              | Hold            |
+| ---------------- | --------------- |
+| <kbd>Left</kbd>  | <kbd>Home</kbd> |
+| <kbd>Right</kbd> | <kbd>End</kbd>  |
+| <kbd>Up</kbd>    | <kbd>PgUp</kbd> |
+| <kbd>Down</kbd>  | <kbd>PgDn</kbd> |
+
+The price is the auto-repeat.
+The arrow now leaves on release, and holding the key types its jump once instead of a run of steps.
+That run is still one key away: NavNum keeps the four arrows under the left fingers, where they repeat as they always did, and the two knobs move the caret without pressing anything at all.
+
+<kbd>Down</kbd>+<kbd>Win</kbd>, the two right thumb keys side by side, is a combo typing <kbd>Menu</kbd> — the context-menu key Base has nowhere else.
+Like the twelve combos that give F1–F12, it lives in the EEPROM rather than in the keymap, so a flash wipes it — see [After flashing](#after-flashing).
+
 ### The Symbol layer, and why the operators sit where they do
 
 The Symbol layer follows [Sunaku's symbol layer](https://sunaku.github.io/moergo-glove80-keyboard.html#symbol-layer) for the Glove80: rather than scattering the operators, put the characters that go *together* next to each other, so the digraphs a programmer types all day become one inward roll instead of two hunted keys.
@@ -144,7 +162,7 @@ So the firmware taps the space itself and one tap types one character.
 ### The Editor layer
 
 The Editor layer carries the shortcuts a keyboard cannot reach in one stroke.
-It is the Glove80's Cursor layer minus its navigation: NavNum already holds the arrows, Home, End and the page keys, and a second copy would only be a second thing to remember.
+It is the Glove80's Cursor layer minus its navigation: NavNum holds the arrows, Home, End and the page keys, the thumbs now hold them too, and a third copy would only be a third thing to remember.
 
 Cut, copy and paste sit on the left home row, on <kbd>s</kbd> <kbd>e</kbd> <kbd>n</kbd>, in that order under three fingers — so the chords typed hundreds of times a day become one roll instead of a stretch — and <kbd>v</kbd> pastes as plain text, one row below paste.
 Undo and redo went to the right hand, on <kbd>l</kbd> and <kbd>r</kbd>: the layer is held by the *left* thumb, so the left hand is the busy one, and left reads as back, right as forward.
@@ -250,7 +268,7 @@ Flash **both halves**, then go through this list before using the board again.
    Quick Tap at 0 lets the hold reach Symbol even straight after a space, at the cost of the space's auto-repeat.
    *Hold On Other Key Press* would do the opposite of Flow Tap — it turns <kbd>Space</kbd> into a hold as soon as a letter follows, which is the stray symbol to avoid.
    Each sub-tab keeps its own **Save** button, and its title carries a `*` until you press it.
-5. *Combos* tab — redefine the **combos that give F1–F12**.
+5. *Combos* tab — redefine the **thirteen combos**: the twelve that give F1–F12, and <kbd>Down</kbd>+<kbd>Win</kbd> → <kbd>Menu</kbd>.
 6. *File* menu → *Save current layout* — save it as the next `archive/ergolrl-vNN.vil`.
 7. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
 8. Re-import that `.vil` (*File* → *Load saved layout*) into Vial, so the board ends up carrying the file the archive holds, combos included.
@@ -260,6 +278,7 @@ Flash **both halves**, then go through this list before using the board again.
 - `ergolr-layers.svg` — Base, NavNum, Symbol and 1dk on one picture, plus the two rotary encoders in the middle.
   Blue marks the key that holds Symbol, orange the key that holds NavNum, cyan the key that holds Editor, matching the RGB under the keys.
   Letter keys show the uppercase letter and the lowercase accented one: the two glyphs the other levels do not repeat.
+  A grey word at the foot of a key is what holding it does, and a small grey pill between two keys is a combo, typed by pressing both at once.
 - `ergolr-emoji.svg` — the Emoji layer, reached by tapping the red <kbd>★</kbd> key twice.
   Each emoji carries the name it has in the original MoErgo layout, and the corner of every key repeats the Base glyph it sits on.
 - `ergolr-editor.svg` — the Editor layer, reached by holding the left thumb <kbd>Enter</kbd>.
