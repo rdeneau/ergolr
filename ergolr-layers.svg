@@ -32,7 +32,7 @@
     .encoder circle { fill: #f0f0f0; }
 
     /* combos: a pill in the gutter between the two keys pressed together */
-    .combo rect { fill: #fff; stroke: #bbb; }
+    .combo rect { fill: #eee; stroke: #bbb; }
     .combo text { font-size: 8px; fill: #888; }
     .comboLbl   { font-size: 9px; fill: #888; }
 
@@ -73,7 +73,7 @@
     .thb_7 g { transform: rotate(-12deg); }
     .thb_6 g { transform: rotate(-24deg); }
 
-    /* the two layer keys carry the colour of the layer they reach */
+    /* the two layer keys carry the color of the layer they reach */
     #sym rect { fill: #99f; }
     #sym text.accent { fill: #063; }
     #sym text.exit { fill: #fff; }
@@ -127,7 +127,7 @@
   </text>
   <g class="encoder">
     <text x="418" y="152" class="encTitle">
-      <tspan class="letter" style="text-anchor: middle">Cursor · </tspan>
+      <tspan class="letter" style="text-anchor: middle">Cursor &amp; </tspan>
       <tspan class="nav letter" style="text-anchor: middle">Scroll</tspan>
     </text>
     <text x="418" y="170" class="encTitle">
@@ -135,10 +135,10 @@
     </text>
     <circle cx="390" cy="212" r="26"/>
     <text x="368" y="209" class="encText">Left / Right</text>
-    <text x="375" y="221" class="encText sym">Vol - / +</text>
+    <text x="375" y="221" class="encText sym" title="Volume">🔉 - / +</text>
     <circle cx="446" cy="212" r="26"/>
     <text x="424" y="209" class="encText">Up / Down</text>
-    <text x="431" y="221" class="encText sym">⏮️ / ⏭️</text>
+    <text x="431" y="221" class="encText sym" title="Track: Previous / Next">⏮️ / ⏭️</text>
   </g>
   <g id="left">
     <g class="col_L specialKey">
@@ -146,7 +146,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Esc</text>
         <text x="42" y="42" class="accent" title="square">²</text>
-        <text x="26" y="49" class="exit">Base</text>
+        <text x="26" y="47" class="exit">Base</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>

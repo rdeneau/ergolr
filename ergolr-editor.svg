@@ -6,7 +6,8 @@
 
     .level1  { font-size: 18px; }
     .level2  { font-size: 12px; fill: #888; }
-    .letter  { font-size: 16px; }
+    .letter  { font-size: 16px !important; }
+    .no-bold  { font-weight: normal !important; }
     .pair    { font-size: 16px; font-weight: bold; }
     .accent  { font-size: 13px; fill: #2a7; }
     .accent2 { font-size: 12px; fill: #6b6; }
@@ -75,10 +76,10 @@
     #edit rect { fill: #7dd; }
 
     /* shortcut groups */
-    rect.comment { fill: #d1bdd1; }
-    rect.copy { fill: #adcda3; }
-    rect.undo { fill: #b6c1cb; }
-    rect.zoom { fill: #d3d3a3; }
+    rect.comment { fill: #ffe5ff; }
+    rect.copy { fill: #e3fddc; }
+    rect.undo { fill: #fbe5d6; }
+    rect.zoom { fill: #fffec4; }
 
     @media (prefers-color-scheme: dark) {
       rect, path, circle { fill: #444; }
@@ -111,7 +112,7 @@
   <text x="8" y="42" class="legend">hold the left thumb <tspan class="act">Enter</tspan> • double tap locks the layer • <tspan class="exit">Esc</tspan> leaves it</text>
   <g class="encoder">
     <text x="418" y="170" class="encTitle">
-      <tspan class="act" style="text-anchor: middle; font-size: larger">Selection</tspan>
+      <tspan class="act letter no-bold" style="text-anchor: middle">Selection</tspan>
     </text>
     <circle cx="390" cy="212" r="26"/>
     <text x="372" y="209" class="encText">↶ Shrink</text>
