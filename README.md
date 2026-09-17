@@ -115,8 +115,15 @@ The price is the auto-repeat.
 The arrow now leaves on release, and holding the key types its jump once instead of a run of steps.
 That run is still one key away: NavNum keeps the four arrows under the left fingers, where they repeat as they always did, and the two knobs move the caret without pressing anything at all.
 
-<kbd>Down</kbd>+<kbd>Win</kbd>, the two right thumb keys side by side, is a combo typing <kbd>Menu</kbd> — the context-menu key Base has nowhere else.
-Like the twelve combos that give F1–F12, it lives in the EEPROM rather than in the keymap, so a flash wipes it — see [After flashing](#after-flashing).
+### The combos
+
+Two keys pressed together give what neither carries alone, and the two are always neighbours.
+
+- The digit row and the key under it give **F1–F12**: <kbd>1</kbd>+<kbd>q</kbd> is F1, <kbd>9</kbd>+<kbd>★</kbd> is F9, and F12 takes the last two keys of the digit row, <kbd>0</kbd>+<kbd>= +</kbd>.
+- <kbd>k</kbd>+<kbd>PrtScr</kbd>, the last two keys of the bottom row, give <kbd>Menu</kbd> — the context-menu key Base has nowhere else.
+
+A combo lives in the EEPROM rather than in the keymap, so a flash wipes it — see [After flashing](#after-flashing).
+It also matches the keycode the keymap holds, not the glyph: a combo written on a key that the next flash redefines stops firing, and has to be pointed at the new keycode.
 
 ### The Symbol layer, and why the operators sit where they do
 
@@ -276,7 +283,7 @@ Flash **both halves**, then go through this list before using the board again.
    Quick Tap at 0 lets the hold reach Symbol even straight after a space, at the cost of the space's auto-repeat.
    *Hold On Other Key Press* would do the opposite of Flow Tap — it turns <kbd>Space</kbd> into a hold as soon as a letter follows, which is the stray symbol to avoid.
    Each sub-tab keeps its own **Save** button, and its title carries a `*` until you press it.
-5. *Combos* tab — redefine the **thirteen combos**: the twelve that give F1–F12, and <kbd>Down</kbd>+<kbd>Win</kbd> → <kbd>Menu</kbd>.
+5. *Combos* tab — redefine the **thirteen combos**: the twelve that give F1–F12, and <kbd>k</kbd>+<kbd>PrtScr</kbd> → <kbd>Menu</kbd>.
 6. *File* menu → *Save current layout* — save it as the next `archive/ergolrl-vNN.vil`.
 7. Compare that export with the previous one in [WinMerge](https://winmerge.org/): anything that differs beyond the keys you meant to change is something the flash lost.
 8. Re-import that `.vil` (*File* → *Load saved layout*) into Vial, so the board ends up carrying the file the archive holds, combos included.

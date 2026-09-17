@@ -629,7 +629,7 @@
     <rect x="765" y="92.5" width="22" height="11" rx="4" ry="4"/>
     <text x="776" y="101">F12</text>
 
-    <rect x="680" y="321.5" width="26" height="11" rx="4" ry="4"/>
-    <text x="694" y="330">Menu</text>
+    <rect x="764" y="265.5" width="24" height="11" rx="4" ry="4"/>
+    <text x="776" y="274">Menu</text>
   </g>
 </svg>
