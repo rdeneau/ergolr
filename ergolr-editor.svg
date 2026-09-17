@@ -17,9 +17,10 @@
     .accent.word { font-size: 10px; }
     .exit    { font-size: 10px; fill: #888; }
     .ghost   { font-size: 11px; fill: #888; text-anchor: start; }
-    .act     { font-size: 12px; fill: #0a8; font-weight: bold; }   /* what the key does */
+    .act     { font-size: 12px; /*fill: #0a8;*/ font-weight: bold; }   /* what the key does */
     .chord   { font-size: 9px; fill: #888; }                       /* the shortcut it sends */
     .chord.long { font-size: 8px; }                              /* when it does not fit */
+    .act.small  { font-size: 10px; }                             /* idem */
     .deadKey { fill: #e33; }
     .big     { font-size: 22px; }
     .specialKey rect { fill: #e4e4e4; }
@@ -67,11 +68,17 @@
     .thb_7 g { transform: rotate(-12deg); }
     .thb_6 g { transform: rotate(-24deg); }
 
-    /* the two layer keys carry the colour of the layer they reach */
+    /* the two layer keys carry the color of the layer they reach */
     #sym rect { fill: #99f; }
     #nav rect { fill: #e83; }
     #dk  rect { fill: #f99; }
     #edit rect { fill: #7dd; }
+
+    /* shortcut groups */
+    rect.comment { fill: #d1bdd1; }
+    rect.copy { fill: #adcda3; }
+    rect.undo { fill: #b6c1cb; }
+    rect.zoom { fill: #d3d3a3; }
 
     @media (prefers-color-scheme: dark) {
       rect, path, circle { fill: #444; }
@@ -88,9 +95,15 @@
       #nav rect        { fill: #c72; }
       #dk  rect        { fill: #b44; }
       #edit rect       { fill: #277; }
-      .act             { fill: #5cc; }
+      /*.act             { fill: #5cc; }*/
       .chord           { fill: #999; }
       #sym text, #nav text, #dk text, #edit text { fill: #fff; }
+
+      /* shortcut groups */
+      rect.comment { fill: #7f727f; }
+      rect.copy { fill: #6a7e64; }
+      rect.undo { fill: #6e757b; }
+      rect.zoom { fill: #6b6b53; }
     }
   </style>
 
@@ -111,58 +124,58 @@
     <g class="col_L specialKey">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Esc</text>
+        <text x="5" y="15" class="ghost">Esc</text>
         <text x="26" y="46" class="chord">Base</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Tab</text>
+        <text x="5" y="15" class="ghost">Tab</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Shift</text>
+        <text x="5" y="15" class="ghost">Shift</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Ctrl</text>
+        <text x="5" y="15" class="ghost">Ctrl</text>
       </g>
     </g>
     <g class="col_1">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">1</text>
+        <text x="5" y="15" class="ghost">1</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Q</text>
+        <text x="5" y="15" class="ghost">Q</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">A</text>
+        <text x="5" y="15" class="ghost">A</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Z</text>
+        <text x="5" y="15" class="ghost">Z</text>
       </g>
     </g>
     <g class="col_2">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">2</text>
+        <text x="5" y="15" class="ghost">2</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">B</text>
+        <text x="5" y="15" class="ghost">B</text>
       </g>
       <g transform="translate(0 60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">S</text>
+        <rect class="copy" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">S</text>
         <text x="26" y="33" class="act">Cut</text>
         <text x="26" y="45" class="chord">Ctrl+X</text>
       </g>
       <g transform="translate(0 120)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">X</text>
+        <rect class="comment" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">X</text>
         <text x="26" y="33" class="act">Uncom.</text>
         <text x="26" y="45" class="chord">Ctrl+K U</text>
       </g>
@@ -170,21 +183,21 @@
     <g class="col_3">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">3</text>
+        <text x="5" y="15" class="ghost">3</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">O</text>
+        <text x="5" y="15" class="ghost">O</text>
       </g>
       <g transform="translate(0 60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">E</text>
+        <rect class="copy" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">E</text>
         <text x="26" y="33" class="act">Copy</text>
         <text x="26" y="45" class="chord">Ctrl+C</text>
       </g>
       <g transform="translate(0 120)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">C</text>
+        <rect class="comment" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">C</text>
         <text x="26" y="33" class="act">Comment</text>
         <text x="26" y="45" class="chord">Ctrl+K C</text>
       </g>
@@ -192,21 +205,21 @@
     <g class="col_4">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">4</text>
+        <text x="5" y="15" class="ghost">4</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">P</text>
+        <text x="5" y="15" class="ghost">P</text>
       </g>
       <g transform="translate(0 60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">N</text>
+        <rect class="copy" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">N</text>
         <text x="26" y="33" class="act">Paste</text>
         <text x="26" y="45" class="chord">Ctrl+V</text>
       </g>
       <g transform="translate(0 120)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">V</text>
+        <rect class="copy" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">V</text>
         <text x="26" y="33" class="act">Paste+</text>
         <text x="26" y="45" class="chord">plain text</text>
       </g>
@@ -214,21 +227,21 @@
     <g class="col_5">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">5</text>
+        <text x="5" y="15" class="ghost">5</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">W</text>
+        <text x="5" y="15" class="ghost">W</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">F</text>
+        <text x="5" y="15" class="ghost">F</text>
         <text x="26" y="33" class="act">Format</text>
         <text x="26" y="45" class="chord">Ctrl+K D</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost"></text>
+        <text x="5" y="15" class="ghost"></text>
       </g>
     </g>
     <g class="ext_L specialKey">
@@ -241,31 +254,31 @@
     <g class="thb_5 specialKey" id="edit">
       <g>
         <rect width="52" height="82" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Enter</text>
+        <text x="5" y="15" class="ghost">Enter</text>
       </g>
     </g>
     <g class="thb_4 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Del</text>
+        <text x="5" y="15" class="ghost">Del</text>
       </g>
     </g>
     <g class="thb_3 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Right</text>
+        <text x="5" y="15" class="ghost">Right</text>
       </g>
     </g>
     <g class="thb_2 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Left</text>
+        <text x="5" y="15" class="ghost">Left</text>
       </g>
     </g>
     <g class="thb_1 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Alt</text>
+        <text x="5" y="15" class="ghost">Alt</text>
       </g>
     </g>
   </g>
@@ -273,117 +286,121 @@
     <g class="col_6">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">6</text>
+        <text x="5" y="15" class="ghost">6</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">J</text>
+        <text x="5" y="15" class="ghost">J</text>
         <text x="26" y="33" class="act">Join</text>
         <text x="26" y="45" class="chord long">Ctrl+Shift+J</text>
       </g>
       <g transform="translate(0 60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">L</text>
+        <rect class="undo" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">L</text>
         <text x="26" y="33" class="act">Undo</text>
         <text x="26" y="45" class="chord">Ctrl+Z</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">.</text>
+        <text x="5" y="15" class="ghost">.</text>
       </g>
     </g>
     <g class="col_7">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">7</text>
+        <text x="5" y="15" class="ghost">7</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">M</text>
+        <text x="5" y="15" class="ghost">M</text>
       </g>
       <g transform="translate(0 60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">R</text>
+        <rect class="undo" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">R</text>
         <text x="26" y="33" class="act">Redo</text>
         <text x="26" y="45" class="chord">Ctrl+Y</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">H</text>
+        <text x="5" y="15" class="ghost">H</text>
       </g>
     </g>
     <g class="col_8">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">8</text>
+        <text x="5" y="15" class="ghost">8</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">D</text>
+        <text x="5" y="15" class="ghost">D</text>
         <text x="26" y="33" class="act">Duplic.</text>
         <text x="26" y="45" class="chord">Ctrl+D</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">T</text>
+        <text x="5" y="15" class="ghost">T</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">G</text>
+        <text x="5" y="15" class="ghost">G</text>
       </g>
     </g>
     <g class="col_9">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">9</text>
+        <text x="5" y="15" class="ghost">9</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">★</text>
+        <text x="5" y="15" class="ghost">★</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">I</text>
+        <text x="5" y="15" class="ghost">I</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">-</text>
+        <text x="5" y="15" class="ghost">-</text>
       </g>
     </g>
     <g class="col_0">
       <g transform="translate(0 -60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">0</text>
+        <text x="5" y="15" class="ghost">0</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Y</text>
+        <text x="5" y="15" class="ghost">Y</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">U</text>
+        <text x="5" y="15" class="ghost">U</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">K</text>
+        <text x="5" y="15" class="ghost">K</text>
       </g>
     </g>
     <g class="col_R specialKey">
       <g transform="translate(0 -60)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">=</text>
+        <rect class="zoom" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">+</text>
+        <text x="26" y="33" class="act">Zoom in</text>
+        <text x="26" y="45" class="chord long">Ctrl+Num +</text>
       </g>
       <g transform="translate(0 0)">
-        <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">*</text>
+        <rect class="zoom" width="52" height="52" rx="5" ry="5"/>
+        <text x="5" y="15" class="ghost">*</text>
+        <text x="26" y="33" class="act small">Zoom out</text>
+        <text x="26" y="45" class="chord long">Ctrl+Num -</text>
       </g>
       <g transform="translate(0 60)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">?</text>
+        <text x="5" y="15" class="ghost">?</text>
       </g>
       <g transform="translate(0 120)">
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost"> <!-- PrtScr --> </text>
+        <text x="5" y="15" class="ghost"> <!-- PrtScr --> </text>
       </g>
     </g>
     <g class="ext_R specialKey">
@@ -396,31 +413,31 @@
     <g class="thb_6 specialKey">
       <g>
         <rect width="52" height="82" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Space</text>
+        <text x="5" y="15" class="ghost">Space</text>
       </g>
     </g>
     <g class="thb_7 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Backsp</text>
+        <text x="5" y="15" class="ghost">Backsp</text>
       </g>
     </g>
     <g class="thb_8 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Up</text>
+        <text x="5" y="15" class="ghost">Up</text>
       </g>
     </g>
     <g class="thb_9 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Down</text>
+        <text x="5" y="15" class="ghost">Down</text>
       </g>
     </g>
     <g class="thb_0 specialKey">
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
-        <text x="13" y="15" class="ghost">Win</text>
+        <text x="5" y="15" class="ghost">Win</text>
       </g>
     </g>
   </g>

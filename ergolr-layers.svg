@@ -196,14 +196,14 @@
         <text x="15" y="37" class="level1">€</text>
         <text x="42" y="18" class="accent2">❝</text>
         <text x="42" y="34" class="accent">«</text>
-        <text x="10" y="46" class="sym">{</text>
+        <text x="10" y="46" class="sym">(</text>
         <text x="49" y="47" class="nav">F2</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="14" y="21" class="letter">B</text>
         <text x="42" y="34" class="accent">œ</text>
-        <text x="10" y="46" class="sym">(</text>
+        <text x="10" y="46" class="sym">{</text>
         <text x="49" y="47" class="nav">Home</text>
       </g>
       <g transform="translate(0 60)">
@@ -228,14 +228,14 @@
         <text x="15" y="37" class="level1">"</text>
         <text x="42" y="18" class="accent2">❞</text>
         <text x="42" y="34" class="accent">»</text>
-        <text x="10" y="46" class="sym">}</text>
+        <text x="10" y="46" class="sym">)</text>
         <text x="49" y="47" class="nav">F3</text>
       </g>
       <g transform="translate(0 0)">
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="14" y="21" class="letter">O</text>
         <text x="42" y="34" class="accent">ô</text>
-        <text x="10" y="46" class="sym">)</text>
+        <text x="10" y="46" class="sym">}</text>
         <text x="49" y="47" class="nav">Up</text>
       </g>
       <g transform="translate(0 60)">
@@ -439,6 +439,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="14" y="21" class="letter">T</text>
         <text x="42" y="34" class="accent">ï</text>
+        <text x="10" y="46" class="sym">*</text>
         <text x="49" y="47" class="nav">5</text>
       </g>
       <g transform="translate(0 120)">
@@ -559,7 +560,6 @@
         <text x="5" y="17" class="capTL">Bksp</text>
         <text x="42" y="17" class="accent2">▲</text>
         <text x="42" y="32" class="accent">⮝</text>
-        <text x="49" y="47" class="nav">0</text>
       </g>
     </g>
     <g class="thb_8 specialKey">

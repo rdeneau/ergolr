@@ -138,13 +138,16 @@ From there the arrows write themselves, all on that one row, most of them rollin
 
 The row below holds `&` `|` `+` `*` on <kbd>z</kbd> <kbd>x</kbd> <kbd>c</kbd> <kbd>v</kbd>, which is what puts `|` under the arrow row and makes `|>` and `||` cheap.
 
-The brackets nest outwards from the middle of the row above, `(` and `)` on the two index-adjacent keys and `[` `]` around them, with `{` `}` one row higher still:
+The brackets nest outwards from the middle of the row above, `{` and `}` on the two index-adjacent keys and `[` `]` around them, with `(` `)` one row higher still:
 
 | <kbd>q</kbd> | <kbd>b</kbd> | <kbd>o</kbd> | <kbd>p</kbd> |
 | ------------ | ------------ | ------------ | ------------ |
-| `[`          | `(`          | `)`          | `]`          |
+| `[`          | `{`          | `}`          | `]`          |
+
+The braces take the inner keys because Base holds them nowhere else, where `(` and `)` are already one tap away on <kbd>6</kbd> and <kbd>7</kbd>.
 
 The right half keeps the punctuation — `.` `/` `:` `\` `!` `?` — plus `~` and `^`.
+It also repeats the `*`, on <kbd>t</kbd>, right of the `/` on <kbd>r</kbd>: `/*` and `*/` are then two neighbouring keys rather than one on each hand.
 
 ### The backtick
 
@@ -183,6 +186,11 @@ Select all, open and print left the layer: <kbd>Ctrl</kbd>+<kbd>A</kbd>, <kbd>Ct
 | <kbd>f</kbd>       | <kbd>Ctrl</kbd>+<kbd>K</kbd>, <kbd>Ctrl</kbd>+<kbd>D</kbd> | Format the document             |
 | <kbd>d</kbd>       | <kbd>Ctrl</kbd>+<kbd>D</kbd>                               | Duplicate the line or selection |
 | <kbd>j</kbd>       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>              | Join lines                      |
+| <kbd>= +</kbd>     | <kbd>Ctrl</kbd>+<kbd>Num +</kbd>                           | Zoom in                         |
+| <kbd>* µ</kbd>     | <kbd>Ctrl</kbd>+<kbd>Num -</kbd>                           | Zoom out                        |
+
+The two zoom keys end the outer right column, where the layer had nothing.
+They send keypad codes, which no host layout can move, and <kbd>= +</kbd> takes the zoom in because it is the key that carries the `+`.
 
 The two knobs work the selection, and each one pushes into the key drawn right under it:
 
