@@ -6,7 +6,8 @@
 
     .level1  { font-size: 18px; }
     .level2  { font-size: 12px; fill: #888; }
-    .letter  { font-size: 16px; }
+    .letter  { font-size: 16px !important; }
+    .no-bold  { font-weight: normal !important; }
     .pair    { font-size: 16px; font-weight: bold; }
     .accent  { font-size: 13px; fill: #2a7; }
     .accent2 { font-size: 12px; fill: #6b6; }
@@ -33,7 +34,6 @@
     /* combos: a pill in the gutter between the two keys pressed together */
     .combo rect { fill: #fff; stroke: #bbb; }
     .combo text { font-size: 8px; fill: #888; }
-    .combo path { fill: none; stroke: #bbb; stroke-dasharray: 2 2; }
     .comboLbl   { font-size: 9px; fill: #888; }
 
     #left  { transform: translate(  4px, 124px); }
@@ -98,7 +98,6 @@
       .exit            { fill: #999; }
       .combo rect      { fill: #333; stroke: #777; }
       .combo text      { fill: #aaa; }
-      .combo path      { stroke: #777; }
       .comboLbl        { fill: #aaa; }
       #dk  rect        { fill: #b44; }
       #edit rect       { fill: #277; }
@@ -119,20 +118,20 @@
     <tspan class="letter">Q</tspan> base key 
     • <tspan class="accent">à</tspan> 1dk (tap <tspan class="deadKey">★</tspan>) 
     • <tspan class="accent2">À</tspan> Shifted
-    • <tspan class="sym">|</tspan> Symbol (hold <tspan class="sym">Space</tspan>)
+    • <tspan class="sym">|</tspan> Symbol (hold <tspan class="sym no-bold">Space</tspan>)
     • <tspan class="nav">F1</tspan> NavNum (hold/double-tap <tspan class="nav">PrtScr</tspan>)
   </text>
-  <text x="8" y="60" class="legend">
-    <tspan class="exit">Home</tspan> what holding the key does
-    • <tspan class="comboLbl">F1</tspan> combo, both keys pressed at once
+  <text x="8" y="58" class="legend">
+    <tspan class="exit">NavNum</tspan> target layer
+    • <tspan class="comboLbl">F1</tspan> combo, both keys pressed at once—e.g. [1]+[Q]→[F1]
   </text>
   <g class="encoder">
     <text x="418" y="152" class="encTitle">
-      <tspan style="text-anchor: middle; font-size: larger">Cursor · </tspan>
-      <tspan class="nav" style="text-anchor: middle; font-size: larger">Scroll</tspan>
+      <tspan class="letter" style="text-anchor: middle">Cursor · </tspan>
+      <tspan class="nav letter" style="text-anchor: middle">Scroll</tspan>
     </text>
     <text x="418" y="170" class="encTitle">
-      <tspan class="sym" style="text-anchor: middle; font-size: larger">Media</tspan>
+      <tspan class="sym letter no-bold" style="text-anchor: middle;">Media</tspan>
     </text>
     <circle cx="390" cy="212" r="26"/>
     <text x="368" y="209" class="encText">Left / Right</text>
@@ -336,7 +335,7 @@
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Right</text>
-        <text x="17" y="47" class="exit">End</text>
+        <text x="14" y="47" class="exit">End</text>
         <text x="42" y="32" class="accent2">⇒</text>
         <text x="42" y="47" class="accent">→</text>
       </g>
@@ -345,7 +344,7 @@
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Left</text>
-        <text x="17" y="47" class="exit">Home</text>
+        <text x="18" y="47" class="exit">Home</text>
         <text x="42" y="32" class="accent2">⇐</text>
         <text x="42" y="47" class="accent">←</text>
       </g>
@@ -567,7 +566,7 @@
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Up</text>
-        <text x="26" y="47" class="exit">PgUp</text>
+        <text x="18" y="47" class="exit">PgUp</text>
         <text x="42" y="17" class="accent2">⇑</text>
         <text x="42" y="32" class="accent">↑</text>
         <text x="49" y="47" class="nav">0</text>
@@ -577,7 +576,7 @@
       <g>
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="5" y="17" class="capTL">Down</text>
-        <text x="26" y="47" class="exit">PgDn</text>
+        <text x="18" y="47" class="exit">PgDn</text>
         <text x="42" y="17" class="accent2">⇓</text>
         <text x="42" y="32" class="accent">↓</text>
         <text x="49" y="47" class="nav">,</text>
@@ -594,34 +593,43 @@
     </g>
   </g>
   <g class="combo">
-    <!-- F9 skips the 1dk key, Menu sits below the two thumbs: both need a guide line -->
-    <path d="M664 97.5 H656 V217.5 H664"/>
-    <path d="M686 336 V384"/>
     <rect x="81" y="137" width="18" height="11" rx="4" ry="4"/>
     <text x="90" y="145.5">F1</text>
+
     <rect x="141" y="122" width="18" height="11" rx="4" ry="4"/>
     <text x="150" y="130.5">F2</text>
+
     <rect x="201" y="114.5" width="18" height="11" rx="4" ry="4"/>
     <text x="210" y="123">F3</text>
+
     <rect x="261" y="122" width="18" height="11" rx="4" ry="4"/>
     <text x="270" y="130.5">F4</text>
+
     <rect x="321" y="129.5" width="18" height="11" rx="4" ry="4"/>
     <text x="330" y="138">F5</text>
+
     <rect x="497" y="129.5" width="18" height="11" rx="4" ry="4"/>
     <text x="506" y="138">F6</text>
+
     <rect x="557" y="122" width="18" height="11" rx="4" ry="4"/>
     <text x="566" y="130.5">F7</text>
+
     <rect x="617" y="114.5" width="18" height="11" rx="4" ry="4"/>
     <text x="626" y="123">F8</text>
-    <rect x="647" y="152" width="18" height="11" rx="4" ry="4"/>
-    <text x="656" y="160.5">F9</text>
+
+    <rect x="677" y="122" width="18" height="11" rx="4" ry="4"/>
+    <text x="686" y="130.5">F9</text>
+
     <rect x="735" y="137" width="22" height="11" rx="4" ry="4"/>
     <text x="746" y="145.5">F10</text>
+
     <rect x="795" y="137" width="22" height="11" rx="4" ry="4"/>
     <text x="806" y="145.5">F11</text>
+
     <rect x="765" y="92.5" width="22" height="11" rx="4" ry="4"/>
     <text x="776" y="101">F12</text>
-    <rect x="673" y="386.5" width="26" height="11" rx="4" ry="4"/>
-    <text x="686" y="395">Menu</text>
+
+    <rect x="680" y="321.5" width="26" height="11" rx="4" ry="4"/>
+    <text x="694" y="330">Menu</text>
   </g>
 </svg>
